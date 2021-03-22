@@ -27,8 +27,8 @@ representing the value of the network, the "**Commitment Token**" (in Boson
 Protocol v0.1 Voucher and Voucher Set)
 [smart contracts](/protocol-overview/smart-contracts), stateful NFTs which
 handle the exchange of goods & services from the digital into the physical
-world. "**Thing Tokens**" as ERC20 fungible counterparts for buying particular
-Commitment Tokens will be introduced with Phase 2.
+world, and "**Thing Tokens**", ERC20 fungible counterparts for buying particular
+Commitment Tokens which will be introduced with Phase 2.
 
 ## Phase 0 "Ecosystem Success": Community-first Development
 

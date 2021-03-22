@@ -12,23 +12,24 @@ and contracts. The message data can be Ether or contract execution parameters.
 Ethereum uses transactions as the smallest unit of execution. Each transaction
 includes the following parameters:
 
-- To: The target account address
-- Value: The value being transferred can be specified
-- Nonce: A transaction-related string used to prevent transactions from being
+- `To`: The target account address
+- `Value`: The value being transferred
+- `Nonce`: A transaction-related string used to prevent transactions from being
   replayed
-- gasPrice: The price of Gas that is consumed to execute the trade
-- gasLimit: The maximum Gas value consumed by the transaction
-- Data: The transaction comes with bytecode information that can be used to
+- `gasPrice`: The price of Gas that is consumed to execute the trade
+- `gasLimit`: The maximum Gas value consumed by the transaction
+- `Data`: The transaction comes with bytecode information that can be used to
   create/invoke smart contracts
-- Signature: Signature information
+- `Signature`: Signature information
 
 Similar to the Bitcoin network, when sending a transaction, the user has to pay
 a certain transaction fee in Ether.
 
 **Gas** refers to the fee, or pricing value, required to successfully conduct a
-transaction or execute a contract. Gas fees \*\*are payments made by users to
+transaction or execute a contract. Gas fees are payments made by users to
 compensate for the computing energy required to process and validate
-transactions on the Ethereum blockchain.
+transactions on the Ethereum blockchain. These fees go to the miners who run the
+transactions, which means that the prices can fluctuate over time.
 
 **Gas limit** refers to the maximum amount of Gas that you're willing to spend
 on a particular transaction. A higher Gas limit means that you must do more work
@@ -47,7 +48,7 @@ the transaction fails with an out-of-Gas exception.
 **Ideal Gas limit** : The ideal Gas limit is when a transaction is submitted
 with enough Gas limit to cover the costs involved to execute the transaction or
 invoke a function call. In order to find the current ideal Gas limits, most
-dApps use [ethgasstation](https://ethgasstation.info/)
+dApps use [ethgasstation](https://ethgasstation.info/).
 
 **Gas limit too high** : Block Gas Limit is the maximum Gas allowed in a block.
 Hence each block has a theoretical maximum number of transactions that it can
@@ -64,7 +65,8 @@ price of Gas.
 **Gas Optimization:** Smart contract execution cost more Gas than necessary, and
 therefore the creators or users will be overcharged. To avoid wasting money,
 there are various best-practice programming rules that developers can follow in
-Solidity or Vyper.
+[Solidity](https://docs.soliditylang.org/en/v0.8.2/) or
+[Vyper](https://vyper.readthedocs.io/en/stable/).
 
 However in various scenarios the costs involved in executing a transaction on
 the Ethereum network can be expensive, no matter how good the code. In order to
@@ -73,7 +75,7 @@ can counter issues caused by high Gas prices.
 
 ## Ethereum Transactions
 
-There are multiple ways in which we can execute transactions on Ethereum . The
+There are multiple ways in which we can execute transactions on Ethereum. The
 object of sending a transaction is either to transfer an asset or to invoke a
 function call in the smart contract. In this document we will discuss various
 approaches for creating transactions.
@@ -174,9 +176,9 @@ One way to get around this is to standardize on a meta-tx-relayer API so that:
   transactions.
 
 For contract interactions which involve ERC20 transfers, meta transactions look
-appealing. Boson contracts have not yet incorporated native meta transactions
-due to the above drawbacks. However efforts are continually made to make dApps
-easier to use. Some of these include implementing new approaches in tackling
-high Gas prices so that users spend less of their funds in paying for Gas while
-interacting with the Boson contracts. Alternative approaches include subsidizing
-Gas payments to an extent.
+appealing. Boson Protocol contracts have not yet incorporated native meta
+transactions due to the above drawbacks. However efforts are continually made to
+make dApps easier to use. Some of these include implementing new approaches in
+tackling high Gas prices so that users spend less of their funds in paying for
+Gas while interacting with the Boson contracts. Alternative approaches include
+subsidizing Gas payments to an extent.
