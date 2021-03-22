@@ -168,20 +168,26 @@ by the mechanism, therefore, the analysis of both possible sequences is
 required. We also need to include mechanism/smart contract fee calculation in
 the design and analysis.
 
-Aghion, P., Fehr, E., Holden, R., and Wilkening, T. (2018). The role of bounded
-rationalityand imperfect information in subgame perfect implementation–an
-empirical investigation. Journal of European Economic Association,
-16(1):232–274. Blumrosen, L. and Dobzinski, S. (2016). (almost) efficient
-mechanisms for bilateral trading.CoRR, abs/1604.04876. Chen, Y.-C., Holden, R.,
-Kunimoto, T., Sun, Y., and Wilkening, T. (2020). Getting dynamic implementation
-to work. Working Paper. Fehr, E., Powell, M., and Wilkening, T. (2020).
-Behavioral constraints on the design ofsubgame-perfect implementation
-mechanisms. Forthcoming at American Economic Review. Gans, J. S. (2019). The
-fine print in smart contracts.Working paper. Janin, S., Qin, K., Mamageishvili,
-A., and Gervais, A. (2020). Filebounty: Fair data ex-change. In IEEE European
-Symposium on Security and Privacy Workshops, EuroS&PWorkshops 2020, Genoa,
-Italy, September 7-11, 2020, pages 357–366. IEEE. Mamageishvili, A. and
-Schlegel, J. C. (2020). Optimal smart contracts with costly verifica-tion.
-InIEEE International Conference on Blockchain and Cryptocurrency, ICBC
-2020,Toronto, ON, Canada, May 2-6, 2020, pages 1–8. IEEE. Moore, J. and Repullo,
-R. (1988). Subgame perfect implementation. Econometrica,56(5):1191–1220.
+## References
+
+- Aghion, P., Fehr, E., Holden, R., and Wilkening, T. (2018). The role of
+  bounded rationality and imperfect information in subgame perfect
+  implementation – an empirical investigation. Journal of European Economic
+  Association, 16(1):232–274.
+- Blumrosen, L. and Dobzinski, S. (2016). (Almost) efficient mechanisms for
+  bilateral trading. CoRR, abs/1604.04876.
+- Chen, Y.-C., Holden, R., Kunimoto, T., Sun, Y., and Wilkening, T. (2020).
+  Getting dynamic implementation to work. Working Paper.
+- Fehr, E., Powell, M., and Wilkening, T. (2020). Behavioral constraints on the
+  design of subgame-perfect implementation mechanisms. Forthcoming at American
+  Economic Review.
+- Gans, J. S. (2019). The fine print in smart contracts. Working paper.
+- Janin, S., Qin, K., Mamageishvili, A., and Gervais, A. (2020). Filebounty:
+  Fair data ex-change. In IEEE European Symposium on Security and Privacy
+  Workshops, EuroS&PWorkshops 2020, Genoa, Italy, September 7-11, 2020, pages
+  357–366. IEEE.
+- Mamageishvili, A. and Schlegel, J. C. (2020). Optimal smart contracts with
+  costly verification. InIEEE International Conference on Blockchain and
+  Cryptocurrency, ICBC 2020,Toronto, ON, Canada, May 2-6, 2020, pages 1–8. IEEE.
+- Moore, J. and Repullo, R. (1988). Subgame perfect implementation.
+  Econometrica, 56(5):1191–1220.

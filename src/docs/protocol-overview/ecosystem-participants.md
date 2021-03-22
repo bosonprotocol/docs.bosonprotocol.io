@@ -52,7 +52,9 @@ in bulk to then resell later to their non-crypto customers.
 **Goals**: Leverages Boson Protocol’s Voucher infrastructure for their B2C
 logic.
 
-Examples: tbd
+**Examples**: This could be an art purveyor which focuses on NFT-keyed artwork
+from particular artists, which looks for specific NFTs and then bundles them for
+resale to galleries or at auctions directly.
 
 ## Developers / Projects
 

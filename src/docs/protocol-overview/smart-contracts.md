@@ -12,10 +12,10 @@ are based on two NFT standards,
 [ERC-1155](https://eips.ethereum.org/EIPS/eip-1155) and
 [ERC-721](https://eips.ethereum.org/EIPS/eip-721).
 
-> Note: Seller makes an offer by minting an ERC-1155 Voucher Set that holds a
-> supply of a specified quantity of assets. A Buyer taking the offer is implying
-> that a singleton Voucher will be extracted from the originating Voucher Set,
-> thus minting an ERC-721.
+> Note: The seller makes an offer by minting an ERC-1155 Voucher Set that holds
+> a supply of a specified quantity of assets. A Buyer taking the offer is
+> implying that a singleton Voucher will be extracted from the originating
+> Voucher Set, thus minting an ERC-721.
 
 ## Contracts description
 
@@ -47,7 +47,7 @@ two for security deposits:
 
 Supported **currencies** are currently: ETH and $BOSON tokens.
 
-> Note: Functions dealing with funds have suffices such as ETHETH or ETHTKN to
+> Note: Functions dealing with funds have suffixes such as ETHETH or ETHTKN to
 > denote the currencies used in that particular function. Two examples are given
 > below.
 

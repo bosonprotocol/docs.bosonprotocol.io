@@ -11,7 +11,7 @@ The core exchange mechanism can be viewed as a decision support system which
 coordinates exchange, governs reversals and handles the main load of disputes in
 order to significantly reduce arbitration cost and friction versus arbitrated
 protocols. The mechanism is designed as a sequential game in which Buyer and
-Seller commit deposits up-front, promoting fair behaviour.
+Seller commit deposits up-front, promoting fair behavior.
 
 ## Towards an Ideal Arbitrated System
 

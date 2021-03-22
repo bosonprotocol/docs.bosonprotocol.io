@@ -14,19 +14,18 @@ mediations and reversals in order to facilitate P2P transactions for physical
 items in a trustless way. By leveraging a dynamic game, the protocol enables
 practically atomic automated transactions. It is implemented in a system of
 non-upgradeable smart contracts on the [Ethereum](https://ethereum.org/)
-blockchain. The protocol functions as a commercial primitive or "Lego brick",
+blockchain. The protocol functions as a commercial primitive or building block,
 thereby enabling digital and decentralized applications to be easily developed
 on top of it. This obviates the requirement for trusted intermediaries; instead
-prioritizing **decentralization**, cost minimization and **trustless value
-exchange**.
+prioritizing decentralization, cost minimization and trustless value exchange.
 
 ## Core exchange mechanism
 
-Boson’s core mechanism is a type of sequential game in which buyer and seller
-commit deposits up-front. The game rules and the final deposit transfer scheme
-are designed in such a way that coordinates transactions and incentivizes
-parties to behave fairly. Or more formally, we say that: "subgame perfect
-equilibrium implementation corresponds to the honest behavior of both players."
+Boson Protocol’s core mechanism is a type of sequential game in which buyer and
+seller commit deposits up-front. The game rules and the final deposit transfer
+scheme are designed to coordinate transactions and incentivize parties to behave
+fairly. Or more formally, we say that: "subgame perfect equilibrium
+implementation corresponds to the honest behavior of both players."
 
 The following image illustrates the complete game tree:
 
@@ -69,6 +68,6 @@ variance in payouts for both the buyer and seller.
 
 This is very much our beta launch of our mechanism and the first step in our
 work for bringing greater trust and protection to buyers in dCommerce to allow
-them to benefit from the promises of interoperability, specialised flows from
+them to benefit from the promises of interoperability, specialized flows from
 composable pieces, and of course protection from all the extractive ills of
 intermediaries.

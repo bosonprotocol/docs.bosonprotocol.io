@@ -15,8 +15,8 @@ ecosystem by funding and enabling the development of a stack of specialized
 applications to disrupt, demonopolize and democratize commerce. Boson Protocol
 enables this via an open tokenized economy of Things which:
 
-1. Automates the redemption of digital rights for physical assets using NFTs
-   encoded with game theory.
+1. automates the redemption of digital rights for physical assets using NFTs and
+   carefully-designed deposit transfers.
 2. Disrupts e-commerce platforms by tokenizing Things and their data within a
    liquid digital market, built on DeFi.
 
@@ -70,7 +70,7 @@ interacting with Boson:
 Get to know the Boson smart contracts
 
 - [Smart contracts](/protocol-overview/smart-contracts)
-- [Whitepaper](https://docsend.com/view/dji32gp25wi5929i)
+- [White paper](https://docsend.com/view/dji32gp25wi5929i)
 - [Governance](/governance)
 
 ## Developer community
