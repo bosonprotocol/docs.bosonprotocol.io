@@ -57,7 +57,7 @@ contain. If there is surplus Gas, it is returned to the sender.
 execution of a contract instruction consumes a fixed amount of cost. When a
 transaction has not been executed and the Gas is exhausted, the contract
 execution is terminated and rolled back. Gas can be exchanged with Ether. It
-should be noted that the price of Ethereum fluctates, but the Gas costs for
+should be noted that the price of Ethereum fluctuates, but the Gas costs for
 executing a certain smart contract can be fixed and adjusted by setting the
 price of Gas.
 
@@ -168,7 +168,7 @@ One way to get around this is to standardize on a meta-tx-relayer API so that:
 
 ### Drawbacks of Meta Transactions
 
-- Value transfered in meta transactions should always be non-zero (msg.value >
+- Value transferred in meta transactions should always be non-zero (msg.value >
   0).
 - Value transfer from EOA (externally owned address) is not possible via meta
   transactions.
