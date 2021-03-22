@@ -66,7 +66,6 @@ permalink: /protocol-overview/glossary/
 - **Currency**: The currency of the transaction (which can be either the price
   or the deposit). The smart contracts currently supports both ETH and $BOSON.
 - **Non-fungible token voucher**: See **Voucher**
-- **Offer**: See **Voucher Set**
 - **Token Supply**: See **Voucher Set**
 - **Voucher Supply**: See **Voucher Set**
 - **Listing**: See **Voucher Set**
