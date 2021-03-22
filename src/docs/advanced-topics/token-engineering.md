@@ -35,41 +35,41 @@ sustainable governance.
 
 ![Token Value Composition](/images/docs/tokenengineering/1.png)
 
-Bosonprotocol invests significantly into maintaining one of the industries
+Boson Protocol invests significantly into maintaining one of the industry's
 strongest rosters for token engineering and maintains close relationships with
 industry leaders in the space such as advisors Dr. Michael Zargham and Dr.
-Trent McConaghy, two foundational researchers that have written seminal
+Trent McConaghy, two foundational researchers who have written seminal
 literature for the field and pioneered world changing technology. Dr. Zargham
-is the founder of blockcience and the inventor of cadCAD, and Dr. McConaghy,
-co-founder of ocean protocol, and inventor of Tokenspice. 
+is the founder of BlockScience and the inventor of cadCAD, and Dr. McConaghy,
+co-founder of Ocean Protocol, is also the inventor of TokenSPICE. 
 
 Dr. McConaghy's call for an emergent practice of token engineering and
-systematic approach to such a discipline.
+systematic approach to such a discipline:
 
 https://blog.oceanprotocol.com/towards-a-practice-of-token-engineering-b02feeeff7ca
 
-Dr. Shermin Voshmgir and Dr. Zargham's Foundations of cryptoeconomic systems.
+Dr. Shermin Voshmgir and Dr. Zargham's Foundations of cryptoeconomic systems:
 
 https://epub.wu.ac.at/7782/1/Foundations%20of%20Cryptoeconomic%20Systems.pdf
 
 ## Boson TE Methodology
 The Token Engineering methodology practised at Boson is heavily influenced by
 the work and research of our advisors. Our approach can be understood
-essentially as the following four step process:
+essentially as the following four-step process:
 1. Write out **Goals** that we are trying to achieve.
 2. Explore the **Design** space of tokenized mechanisms that can be composed towards achieving our goals - loop back to update our goals.
 3. **Verification** of designs using numerical methods, modelling and simulation, data science and visualization - loop back to update designs
-4. Expose mechanism levers and their resulting **Impact** on the bounds and likelihoods of ecosystem outcomes to empower decentralized decision making towards **Optimization** - loop back to update designs
+4. Expose mechanism levers and their resulting **Impact** on the bounds and likelihoods of ecosystem outcomes to empower decentralized decision-making towards **Optimization** - loop back to update designs
 
 ### Goals for Boson Token Engineering
 The objective of our ecosystem is to **maximize the number of quality voucher
-redemptions** **facilitated by the boson protocol**. By injecting a small fee
+redemptions** **facilitated by Boson Protocol**. By injecting a small fee
 into protocol usage, value capture is enabled. By routing value back into
 ecosystem development, a virtuous cycle of sustainable growth is enabled for
-boson and it's surrounding ecosystem. And by guardrailing a compliant path to
+Boson and its surrounding ecosystem. And by guard-railing a compliant path to
 progressive decentralization, we can ensure the survival and continuous
 improvement of an anti-fragile network to build and deploy the fair and
-equitable decommerce stack. In summary, in addition to optimizing for the
+equitable dCommerce stack. In summary, in addition to optimizing for the
 ecosystem objective function as stated above, we are engineering for the
 following goals:
 
@@ -89,8 +89,8 @@ later modelled and verified using cadCAD.
 **Stock & Flows**
 The Stock & Flow is a system diagram representing the relationship between
 different 'stocks' deposits of quantity and 'flows' the change between them.
-You can think of a stock as a reserve that if time stops will not move at all,
-a flow is the relationship between these different stocks as time passes, if
+You can think of a stock as a reserve that if time stops will not move at all;
+a flow is the relationship between these different stocks as time passes; if
 time stops there will be nothing in the flows and the stocks will not change at
 all.
 
@@ -111,11 +111,11 @@ through a network of stocks and flows.
 
 ### Numerical Verification - Modelling and Simulation
 
-Our token engineering methodology allows for seperation of concerns between
+Our token engineering methodology allows for separation of concerns between
 design teams and modelling teams. Ecosystem value flows are the final product
-of the design team, and are handed of to the python gurus for model
-implementation, simulations, and analysis. It's early stages for the boson
-token engineering team, but here we present preliminary results boson ecosystem
+of the design team, and are handed of to the Python gurus for model
+implementation, simulations, and analysis. It's early stages for the Boson
+token engineering team, but here we present the preliminary results of the Boson ecosystem
 modelling. 
 
 Visualization of $BOSON fully diluted token distribution allocations. On the
@@ -144,15 +144,15 @@ fundraising periods.
 
 cadCAD is an open-source Python library that lets you design, optimize,
 validate and understand dynamical complex systems. It is useful because it
-allows engineers to ask powerful what if questions, using simulation features
+allows engineers to ask powerful 'what if?' questions, using simulation features
 like A/B Tests, Parameter Sweeps or Monte Carlo Analysis. In our case, we use
-cadCAD for simulating the movements Boson Value Flows over time. We can do this
+cadCAD for simulating the movements of Boson Value Flows over time. We can do this
 by assuming the length of a Time Step, say 1 month, and specifying the number
 of Time Steps that the system will run for, say 60 steps (5 years). The stocks
 act as variables while the flows act as rates of change between them.
 
-Here we model 'Phase-0' of the ecosystems value flows for the network. This is
-a linear model in which boson network rewards are distributed strategically to
+Here we model 'Phase-0' of the ecosystem's value flows for the network. This is
+a linear model in which Boson network rewards are distributed strategically to
 network developers and participants and to fund the production of community
 ecosystem products, driving long-term value generation for boson and its
 surrounding ecosystem.
@@ -161,14 +161,14 @@ surrounding ecosystem.
 
 Here we model 'Phase-1' of the ecosystems value flows for the network. In this
 case, we have a supply of commitment token vouchers being minted by sellers.
-Sellers are recruited to the platform by aggregators, of which we assume a
+Sellers are recruited to the platform by aggregators, for which we assume a
 linear growth rate, but a non-linear growth in sellers. In this model, each
 seller introduces a single type of product into the marketplace, represented by
 a commitment token voucher set (ERC1155). Each product has a quantity
 available, a price, an underlying quality, a popularity, and other attributes
 such as name. We also assume that the number of buyers in the market will
 increase non-linearly as the number of diverse products grows linearly.
-Complaints and faults are sampled from a random distribution based off of the
+Complaints and faults are sampled from a random distribution based on the
 underlying value of each commitment voucher item. As items result in complaints
 or faults, their public popularity score decreases.
 
@@ -186,7 +186,7 @@ The above results do not indicate any sort of expectations of the future. They
 are merely models, and we must remember the golden rule "All models are wrong,
 but some are useful." We look forward to progressively collaborating with the
 community at large in future iterations of our token engineering iterations for
-boson and the dcommerce stack.
+Boson and the dCommerce stack.
 
 ### Impact Optimization
 
@@ -195,21 +195,21 @@ for sellers and buyers, and reward mechanisms for supply aggregators. Further
 analysis and results will be released in a series of publications in Q2 of this
 year. 
 
-## Solving dcommerce challenges
+## Solving dCommerce challenges
 
-**dcommerce challenges** At the core of dcommerce are a set of challenges which
+**dCommerce challenges** At the core of dCommerce are a set of challenges which
 combine operations, game theory, ecosystem value flows and token engineering. 
 It is possible that this set of problems is intractable, which would mean that
-commerce will be forever mediated by humans- with all the cost, trust and
+commerce will be forever mediated by humans - with all the cost, trust and
 friction that this implies.  However, our research indicates that these
 problems can be solved, to a significant extent, by unbundling the services
 provided by ecommerce and replacing them with composable decentralized
 applications and protocols.  Boson’s core mechanism and despatch modules are
 examples of these.
 
-**dcommerce research group** We spoke to the token engineering community leads
+**dCommerce research group** We spoke to the token engineering community leads
 and agreed to create a research group to attract multi-disciplinary people to
-work on hard problems in dcommerce.  This research group will offer funded
+work on hard problems in dCommerce.  This research group will offer funded
 bounties for teams to find solutions to problems such as:
 
 - Refunds (via decentralized identity and insurance providers)
@@ -217,30 +217,30 @@ bounties for teams to find solutions to problems such as:
 - Quality assessment (via keepers)
 - Despatch (enabling buyers to delegate redemption signing)
 
-**dcommerce community outreach**  We will feed this research group with a
+**dCommerce community outreach**  We will feed this research group with a
 funnel of new talent via an industry and academic outreach program.  This
 outreach program will incentivize people from specific disciplines such as
 insurance, ecommerce and finance to come and work on hard problems in tandem
 with people with skills such as token engineering and game theory.
 
-**dcommerce DAO**  Research groups which can apply for funding from the
-dCommerce DAO, in order to develop solutions into  dapps or protocols which may
+**dCommerce DAO**  Research groups which can apply for funding from the
+dCommerce DAO, in order to develop solutions into dApps or protocols which may
 be usefu or valuable to the ecosystem.
 
-**dcommerce accelerator** We are in discussion with Outlier Ventures about
-creating a track within their Basecamp accelerator, for dcommerce projects. 
+**dCommerce accelerator** We are in discussion with Outlier Ventures about
+creating a track within their Basecamp accelerator, for dCommerce projects. 
 Such projects would receive additional grant funding and specialist token,
-ecosystem, game theory and dcommerce support from the Boson protocol team.
+ecosystem, game theory and dcommerce support from the Boson Protocol team.
 
-Think you got what it takes to face the dcommerce challenges? Reach out to
-Boson head of community Alastair Band on LinkedIn to learn more about the
+Think you've got what it takes to face the dCommerce challenges? Reach out to
+Boson's head of community, Alastair Band, on LinkedIn to learn more about the
 opportunities.
 
 [Alastair Band - Head of Community - Boson Protocol | LinkedIn](https://www.linkedin.com/in/alastairband/)
 
 ## Partnering with the Token Engineering Academy and Token Engineering Commons
 
-Boson protocol cleaned the cupboards at the token engineering academy by hiring
+Boson Protocol cleaned the cupboards at the token engineering academy by hiring
 the majority of top-tier token engineering researchers, teachers, and students
 coming out of the programs there. Thus due to the non-extractive mandate of
 Boson, replenishments are in order. This is why Boson has committed to
@@ -267,25 +267,23 @@ a keyword to get a discount on enrollment.
 
 ### The Token Engineering Commons
 
-To participate in collaborative development of the most  bleeding edge token
+To participate in collaborative development of the most bleeding-edge token
 engineering products for public good, be sure to participate in the Token
 Engineering Commons! "The TEC is like a skatepark for brilliant academics,
 teachers, hackers, designers, and cultural innovators" - Nico Rodriguez.
 
 [Token Engineering Commons - Medium](https://medium.com/token-engineering-commons)
 
-Boson's Sebnem hosts the Omega working group bi-weekly working session, getting
+Boson Protocol's Sebnem hosts the Omega working group bi-weekly working session, getting
 to the bottom of assumptions that we hold in the token engineering community,
 and addressing the emergent properties of ethics in the field. Boson's Shawn
-Anderson hosts a weekly tech lab, every friday for anyone to come and get your
+Anderson hosts a weekly tech lab every Friday for anyone to come and get your
 hands dirty in experimenting with the latest and greatest token engineering
-toolsets such as cadCAD or Tokenspice2.
+toolsets such as cadCAD or TokenSPICE2.
 
 ### Stay Tuned for More
-
-And of course, stay tuned for rapid and ground breaking
-developments coming out of Bosonprotocol as we march towards a future where all
-humans can benefit from the value we generate through collaborative,
+And of course, stay tuned for rapid and ground-breaking developments coming out of Boson Protocol 
+as we march towards a future where all humans can benefit from the value we generate through collaborative,
 decentralized commerce!
 
 [Boson Protocol](https://www.bosonprotocol.io/)
