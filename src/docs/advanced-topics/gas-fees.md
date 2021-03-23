@@ -180,3 +180,81 @@ easier to use. Some of these include implementing new approaches in tackling
 high Gas prices so that users spend less of their funds in paying for Gas while
 interacting with the Boson contracts. Alternative approaches include subsidizing
 Gas payments to an extent.
+
+Using paymaster for subsidizing gas is an alternative approach which Boson is looking forward to implement.  It employs the similar approach to GSN. Which can ease the onboarding of non crypto users easier.
+
+Using the approach involves 
+
+- Signing and Sending Meta Transaction to relay server
+- Relay Servers
+- Paymaster
+- Trusted forwarder
+- Recipient Contract
+- Relay Hub
+
+Client signs and sends meta transactions to the relay servers. Client signs a message containing information about the transaction they would like to execute and sends it to a relay server. Before the relay server pays for gas it verifies it will get funded by a Paymaster contract.
+
+Relay Servers will be accepting requests from clients & paying gas fees for them. In general a Relay server should be deployed for an individual project and use the third party relays as a back up.
+
+Paymaster contract acts as a reserve for paying gas fees for the relayed transactions. Paymaster has full control over accepting or rejecting specific relayed transactions. Also custom Paymaster can  be deployed for incentivization of gas using Boson ERC20 Tokens.
+
+Trusted Forward will check if the relayed transaction were sent by the specific client or not, They do so by verifying the signature and nonce of the user account.
+
+Recipient Contract is the target contract which is able to accept meta transactions, where actual client address can be retrieved from `_msgSender()`, instead of `msg.sender`, when it's inheriting from this simple base class. which is mentioned below ..
+
+```
+/**
+ * A base contract to be inherited by any contract that want to receive relayed transactions
+ * A subclass must use "_msgSender()" instead of "msg.sender"
+ */
+abstract contract BaseRelayRecipient is IRelayRecipient {
+
+    /*
+     * Forwarder singleton we accept calls from
+     */
+    address public trustedForwarder;
+
+    function isTrustedForwarder(address forwarder) public override view returns(bool) {
+        return forwarder == trustedForwarder;
+    }
+
+    /**
+     * return the sender of this call.
+     * if the call came through our trusted forwarder, return the original sender.
+     * otherwise, return `msg.sender`.
+     * should be used in the contract anywhere instead of msg.sender
+     */
+    function _msgSender() internal override virtual view returns (address payable ret) {
+        if (msg.data.length >= 20 && isTrustedForwarder(msg.sender)) {
+            // At this point we know that the sender is a trusted forwarder,
+            // so we trust that the last bytes of msg.data are the verified sender address.
+            // extract sender address from the end of msg.data
+            assembly {
+                ret := shr(96,calldataload(sub(calldatasize(),20)))
+            }
+        } else {
+            return msg.sender;
+        }
+    }
+
+    /**
+     * return the msg.data of this call.
+     * if the call came through our trusted forwarder, then the real sender was appended as the last 20 bytes
+     * of the msg.data - so this method will strip those 20 bytes off.
+     * otherwise, return `msg.data`
+     * should be used in the contract instead of msg.data, where the difference matters (e.g. when explicitly
+     * signing or hashing the
+     */
+    function _msgData() internal override virtual view returns (bytes memory ret) {
+        if (msg.data.length >= 20 && isTrustedForwarder(msg.sender)) {
+            return msg.data[0:msg.data.length-20];
+        } else {
+            return msg.data;
+        }
+    }
+}
+```
+
+Relay hub will trustlessly connect clients, relay servers & paymasters, so participants don't need to know about each other. Relay hub also makes sure relay server gets paid back by paymaster after transaction is completed etc.
+
+Using paymaster for subsidizing gas is an alternative approach which Boson is looking forward to implement.  It employs the similar approach to GSN. Which can ease the onboarding of non crypto users.
